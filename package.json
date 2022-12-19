@@ -1,6 +1,6 @@
 {
   "name": "strict-hookable",
-  "version": "5.4.2",
+  "version": "5.4.3",
   "description": "Awaitable hook system",
   "keywords": [
     "hook",
@@ -10,7 +10,7 @@
     "tappable",
     "strict"
   ],
-  "repository": "unjs/hookable",
+  "repository": "Vinccool96/strict-hookable",
   "license": "MIT",
   "exports": {
     "import": "./dist/index.mjs",
