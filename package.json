@@ -1,5 +1,5 @@
 {
-  "name": "hookable",
+  "name": "strict-hookable",
   "version": "5.4.2",
   "description": "Awaitable hook system",
   "keywords": [
@@ -7,7 +7,8 @@
     "hookable",
     "plugin",
     "tapable",
-    "tappable"
+    "tappable",
+    "strict"
   ],
   "repository": "unjs/hookable",
   "license": "MIT",
