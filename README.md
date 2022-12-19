@@ -13,23 +13,23 @@
 Using yarn:
 
 ```bash
-yarn add hookable
+yarn add strict-hookable
 ```
 
 Using npm:
 
 ```bash
-npm install hookable
+npm install strict-hookable
 ```
 
 ## Usage
 
-**Method A: Create a hookable instance:**
+**Method A: Create a strict-hookable instance:**
 
 ```js
-import { createHooks } from 'hookable'
+import { createHooks } from 'strict-hookable'
 
-// Create a hookable instance
+// Create a strict-hookable instance
 const hooks = createHooks()
 
 // Hook on 'hello'
@@ -42,7 +42,7 @@ hooks.callHook('hello')
 **Method B: Extend your base class from Hookable:**
 
 ```js
-import { Hookable } from 'hookable'
+import { Hookable } from 'strict-hookable'
 
 export default class FooLib extends Hookable {
   constructor() {
@@ -237,7 +237,7 @@ debug.close()
 
 ### From `4.x` to `5.x`
 
-- Type checking improved. You can use `Hookable<T>` or `createHooks<T>()` to provide types interface **([c2e1e22](https://github.com/unjs/hookable/commit/c2e1e223d16e7bf87117cd8d72ad3ba211a333d8))**
+- Type checking improved. You can use `Hookable<T>` or `createHooks<T>()` to provide types interface **([c2e1e22](https://github.com/unjs/strict-hookable/commit/c2e1e223d16e7bf87117cd8d72ad3ba211a333d8))**
 - We no longer provide an IE11 compatible umd build. Instead, you should use an ESM-aware bundler such as webpack or rollup to transpile if needed.
 - Logger param is dropped. We use `console.warn` by default for deprecated hooks.
 - Package now uses named exports. You should import `{ Hookable }` instead of  `Hookable` or use new `createHooks` util
@@ -248,24 +248,22 @@ debug.close()
 
 Extracted from [Nuxt](https://github.com/nuxt/nuxt.js) hooks system originally introduced by [Sébastien Chopin](https://github.com/Atinux)
 
-Thanks to [Joe Paice](https://github.com/RGBboy) for donating [hookable](https://www.npmjs.com/package/hookable) package name.
-
 ## License
 
 MIT - Made with 💖
 
 <!-- Badges -->
-[npm-version-src]: https://flat.badgen.net/npm/dt/hookable
-[npm-version-href]: https://npmjs.com/package/hookable
+[npm-version-src]: https://flat.badgen.net/npm/dt/strict-hookable
+[npm-version-href]: https://npmjs.com/package/strict-hookable
 
-[npm-downloads-src]: https://flat.badgen.net/npm/v/hookable
-[npm-downloads-href]: https://npmjs.com/package/hookable
+[npm-downloads-src]: https://flat.badgen.net/npm/v/strict-hookable
+[npm-downloads-href]: https://npmjs.com/package/strict-hookable
 
-[github-actions-ci-src]: https://flat.badgen.net/github/checks/unjs/hookable/main
-[github-actions-ci-href]: https://github.com/unjs/hookable/actions
+[github-actions-ci-src]: https://flat.badgen.net/github/checks/unjs/strict-hookable/main
+[github-actions-ci-href]: https://github.com/unjs/strict-hookable/actions
 
-[codecov-src]: https://flat.badgen.net/codecov/c/github/unjs/hookable
-[codecov-href]: https://codecov.io/gh/unjs/hookable
+[codecov-src]: https://flat.badgen.net/codecov/c/github/unjs/strict-hookable
+[codecov-href]: https://codecov.io/gh/unjs/strict-hookable
 
-[packagephobia-src]: https://flat.badgen.net/packagephobia/install/hookable
-[packagephobia-href]: https://packagephobia.now.sh/result?p=hookable
+[packagephobia-src]: https://flat.badgen.net/packagephobia/install/strict-hookable
+[packagephobia-href]: https://packagephobia.now.sh/result?p=strict-hookable
